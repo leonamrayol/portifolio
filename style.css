@@ -1,0 +1,314 @@
+/* ----------------> SCROLLBAR <-----------------*/
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #f16321;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 4px solid #181717;  /* creates padding around scroll thumb */
+    padding-right: 2px;
+  }
+
+body {
+    font-family: 'Roboto Slab', Sans-serif;
+    background-color: #181717;
+}
+
+.bpdf{
+    margin: 5vh;
+    padding: 10px 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid #60faff;
+    border-radius: 30px;
+    transition-duration: 0.4s;
+    visibility: hidden;
+
+}
+
+.bpdf:hover {
+    background-color: #60faff; /* Green */
+    color: black;
+
+  }
+
+
+  /* ----------------> MENU BUTTON <------------------ */
+  
+button{
+    border-bottom: 2px solid;
+    cursor: pointer;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    cursor: pointer;
+}
+
+.menu{
+    margin: 5vh;
+    align-items: flex-end;
+    padding: 10px 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid #f16321;
+    background: #f16321;
+    border-radius: 30px;
+    transition-duration: 0.4s;
+}
+
+.menu:hover{
+    border: 2px solid white;
+    background-color: white; /* Green */
+    color: black;
+}
+
+#opt{
+    visibility: hidden;  
+}
+
+#opt a{
+    height: 5vh;
+}
+
+#opt li{
+    display: flex;
+    justify-content: center;
+    margin: 2vh 0 0 5vh;
+    padding: 2vh;
+    border: 2px solid #f16321;
+    border-radius: 30px;
+}
+.option{
+    color: white;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.transform{
+    transition: all 0.5s ease;
+}
+
+.transform-activate {
+    transform: translateX(5vw);
+}
+
+/* ----------------------------------------------- */
+
+.first{
+    width: 99vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.hello{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 49vw;
+    height: 100vh;
+    color: white;
+    transform: translate3d(+33.334%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    opacity: 1;
+}
+
+.h2{
+    font-size: 25px;
+    margin-bottom: 2vh;
+}
+
+.h1{
+    font-size: 90px;
+    text-transform: uppercase;
+    font-family: Oswald, sans-serif;
+}
+
+.p{
+    margin-top: 2vh;
+    width: 25vw;
+    font-size: 18px;
+}
+
+.img-responsive{
+    object-fit: cover;
+    width: 50vw;
+    height: 100vh;
+}
+
+.more{
+    margin-top: 2vh;
+    width: 12vw;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #f16321;
+}
+
+ /* ----------------------> SOBRE MIM <---------------------------------*/
+
+.about{
+    display: flex;
+    align-items: stretch;
+}
+
+.img-study{
+    object-fit: cover;
+    width: 40vw;
+    height: 100vh;
+}
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+}
+
+.td{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f16321;
+    padding: 0.5em;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 60vh;
+    width: 55vw;
+    
+}
+
+.pd{
+    width: 40vw;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 55vw;
+}
+
+.linsta{
+    width: 5vw;
+    margin: 2vh;
+}
+
+.llinked{
+    width: 5vw;
+    margin: 2vh;
+}
+
+.lcv{
+    width: 5vw;
+    margin: 2vh;
+}
+
+/* ------------------> CONTATO <--------------------- */
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 99vw;
+    border-radius: 30px;
+}
+
+    /* LADO DIREITO */
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+.contato h2{
+    text-transform: uppercase;
+    font-size:60px;
+    font-weight: bold;
+    color: #f16321;
+}
+
+.contato p {
+    font-size:30px;
+    font-weight: bold;
+    color: white;
+}
+
+    /* LADO ESQUERDO */
+
+form {
+	margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+form label, form legend {
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 40vw;
+    background: none;
+    border-bottom: 2px solid #f16321;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+
+.menviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: #f16321;
+	font-weight: bold;
+	color: white;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 500ms all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.1);
+}
+

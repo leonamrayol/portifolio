@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    
+    <title>LeoDev</title>
+    <link rel="website icon" href="img/icon.png">
+</head>
+<body>
+    <header id="home">
+        <section class="first">
+            <a href="files/CURRÍCULO.pdf" target="_blank" class="bpdf">
+                <button type="button" ></button>
+                    Curículo
+                </button>
+            </a>
+
+            <!-- MENU -->
+
+            <nav class="nav">
+                <button type="button" id="button-m" class="menu" 
+                onclick="toggle()"> 
+                  Menu
+                </button>
+
+                <div class="option transform">
+                    <ul class="opt" id="opt">
+                        <a href="#home">
+                          <li>HOME</li>
+                        </a>
+                        <a href="#about"> 
+                          <li>SOBRE MIM</li>
+                        </a>
+                        <a href="#contact">
+                          <li>CONTATO</li>
+                        </a>
+                      </ul>
+                </div>
+              </nav>  
+            
+            <!-- HELLO -->
+
+            <div class="hello">  
+                <h2 class="h2">Freelancer Web Developer</h2>       
+                <h1 class="h1">Leonam Rayol</h1> 
+                <p class="p">Sou um acadêmico de Engenharia de Computação pela UFPA, amante de códigos 
+                    e números.</p>
+
+                <a class="more" href="#about">
+                    Mais Sobre mim
+                </a>
+            </div>
+            <img src="img/PERFIL_2.jpg" alt="Foto do Dev" class="img-responsive">
+        </section>
+    </header>
+    <main>
+        <section class="about" id="about">
+            <div>
+                <img src="img/STUDY.jpg" class="img-study" alt="Foto do Leonam Estudando">
+            </div>
+            <section class="sobre">
+                <div class="description">
+                    <h2 class="td">Sobre mim</h2>
+                    <p class="pd">Ei man! Sou o Leonam Rayol e meu gosto por desafios me levou a experimentar
+                        a arte da progrmação, duas coisas que eu gosto muito em uma: matemática e código!
+                        Desde 2019 quando comecei em Eng. de Computação venho estudando e aperfeiçoando essa arte,
+                        mas como todo artista minhas obras não podem ficar somente comigo né? Por isso decidi 
+                        ofertar meus talentos a todos aqueles que assim como eu gostam de beleza, e de quebra, querem 
+                        um produto digital.
+                    </p> 
+                </div>
+                <div class="redes">
+                    <a href="https://www.instagram.com/rayoldev/" target="_blank">
+                        <img src="img/INSTA.png" class="linsta" alt="Imagem logo do instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/leonam-rayol-840405220/" target="_blank">
+                        <img src="img/LINKED.png" class="llinked" alt="Imagem logo do linkedin">
+                    </a>
+                    <a href="files/CURRÍCULO.pdf" target="_blank">
+                        <img src="img/CV.png" class="lcv" alt="Ícone de CV">
+                    </a>
+                </div>
+            </section>
+        </section>
+        <section id="contact" class="contact">
+
+            <!-- LADO DIREITO -->
+
+            <div class="contato">
+                <h2>Contato</h2>
+                <p>Vamos Lá?</p>
+            </div>
+            
+            <!-- LADO ESQUERDO -->
+            <form>
+				<label for="nomesobrenome">Nome</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required="" placeholder="Nome e Sobrenome">
+
+				<label for="email">Email</label>
+				<input type="email" id="email" class="input-padrao" required="" placeholder="seuemail@domínio.com">
+
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" class="input-padrao" required="" placeholder="(XX) X XXXX-XXXX">
+
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="100" rows="2" id="mensagem" class="input-padrao" placeholder="Conte-me o porque você se interessou por mim!" 
+                required=""></textarea>
+
+				<fieldset>
+					<legend>Como prefere o nosso contato?</legend>
+				
+					<label for="radio-email"><input type="radio" value="email" name="contato" id="radio-email">Email</label>
+					
+					<label for="radio-telefone"><input type="radio" value="telefone" name="contato" id="radio-telefone">Telefone</label>
+					
+					<label for="radio-whatsapp"><input type="radio" value="whatsapp" name="contato" id="radio-whatsapp" checked="">WhatsApp</label>
+                    <div class="menviar">
+                        <input type="submit" value="Enviar formulário" class="enviar">
+                    </div>
+				    
+				</fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
